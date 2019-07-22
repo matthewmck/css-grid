@@ -1,0 +1,121 @@
+body {
+  padding-top: 100px;
+}
+
+.mediumPurple {
+  background: mediumpurple;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* ###################### GRID ###################### */
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px
+}
+
+.flexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-1-of-2 {
+  flex-basis: 48%
+}
+
+.col-1-of-3 {
+  flex-basis: 30.66%;
+}
+
+.col-2-of-3 {
+  flex-basis: 65.34%;
+}
+
+.col-1-of-4 {
+  flex-basis: 22%;
+}
+
+.col-2-of-4 {
+  flex-basis: 48%;
+}
+
+.col-3-of-4 {
+  flex-basis: 74%;
+}
+
+/* Width that can fit navbar and container */
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .col-1-of-2 {
+    flex-basis: 100%
+  }
+
+  .col-1-of-3 {
+    flex-basis: 48%;
+  }
+
+  .col-2-of-3 {
+    flex-basis: 100%;
+  }
+
+  .col-1-of-4 {
+    flex-basis: 48%;
+  }
+
+  .col-2-of-4 {
+    flex-basis: 100%
+  }
+
+  .col-3-of-4 {
+    flex-basis: 100%;
+  }
+
+  .tablet-full {
+    flex-basis: 100%
+  }
+
+
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .col-1-of-2 {
+    flex-basis: 100%
+  }
+
+  .col-1-of-3 {
+    flex-basis: 100%;
+  }
+
+  .col-2-of-3 {
+    flex-basis: 100%;
+  }
+
+  .col-1-of-4 {
+    flex-basis: 100%;
+  }
+
+  .col-2-of-4 {
+    flex-basis: 100%
+  }
+
+  .col-3-of-4 {
+    flex-basis: 100%;
+  }
+}
